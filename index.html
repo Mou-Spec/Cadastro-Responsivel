@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title> <!--Depois penso num nome melhor-->
+</head>
+<body>
+    <header>
+        <h1>Cadastro Teste</h1>
+        <nav>
+            <ul>
+                <li href="#cadastro-forms" class="nav-link active">Cadastrar</li>
+                <li href="#lista" class="nav-link">Lista de usuário</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="#cadastro-forms" class="section active">
+            <div class="Cadastrar-forms">
+                <h2>Cadastrar novo usuário</h2>
+                <form id="formulario-usuario" method="post">
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" name="nome" id="nome" required>
+                            <div class="erro" id="nome-error">Por favor, insira um nome válido</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Nome Completo</label>
+                            <input type="email" name="email" id="email" required>
+                            <div class="erro" id="email-error">Por favor, insira um e-mail válido</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="idade">Idade</label>
+                            <input type="number" name="idade" id="idade" min="18">
+                            <div class="erro" id="idade-error">A idade minima é pelo menos 18</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tell">Telefone</label>
+                            <input type="tel" name="tell" id="tell" required>
+                            <div class="erro" id="tell-error">Formato de número de telefone incorreto</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" name="endereco" id="endereco" required>
+                            <div class="erro" id="endereco-error">Por favor, insira um endereco válido</div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="botao">Cadastrar</button>
+
+                </form>
+            </div>
+            
+        </section>
+
+        <section id="#lista" class="section active">
+            <!--Aba de lista, aqui oh-->
+        </section>
+    </main>
+     <footer>
+        <p>© 2025 Uninassau</p>
+    </footer>
+    
+    <div id="modal" class="modal">
+        <!--Botar o modal aqui eu acho-->
+    </div>
+
+</body>
+</html>
