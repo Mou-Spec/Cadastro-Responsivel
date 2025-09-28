@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sistema de Cadastro de usuário</title> 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"href="css\responsive.css">
+    <link rel="stylesheet"href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="font">
@@ -22,10 +22,10 @@
         <i class="fa fa-bars"></i>
     </button>
 
-    <nav class="nav-android">
+    <nav class="nav-android active">
         <ul>
-            <a href="#cadastro-forms" class="nav-link active"><i class="fa fa-user-circle-o"></i> Cadastrar</a>
-            <a href="#lista" class="nav-link"><i class="fa fa-list" style="font-size:14px"></i> Lista de usuário</a>
+            <a href="#cadastro-forms" class="nav-link active" id="cadastro-link-mobile"><i class="fa fa-user-circle-o"></i> Cadastrar</a>
+            <a href="#lista" class="nav-link" id="lista-link-mobile"><i class="fa fa-list" style="font-size:14px"></i> Lista de usuário</a>
         </ul>
     </nav>
     
@@ -62,9 +62,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="tell">Telefone</label>
-                            <input type="tel" name="tell" id="tell" required pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}">
-                            <div class="erro" id="tell-error">Formato de número de telefone incorreto</div>
+                            <label for="idade">Idade</label>
+                            <input type="number" name="idade" id="idade" required max="120" min="18">
+                            <div class="erro" id="idade-error">Formato de número de telefone incorreto</div>
                         </div>
                         
                         <div class="form-group">
@@ -141,6 +141,6 @@
         </div>
     </div>
 
-    <script src="js\sript.js"></script>
+    <script src="js\script.js"></script>
 </body>
 </html>
