@@ -101,40 +101,40 @@
         min-height: 55px;
     }
 
+}
+
+    @media (max-width: 768px) {
     .tabela-container {
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; 
+        -webkit-overflow-scrolling: touch;
         border: 1px solid var(--border);
         border-radius: 10px;
+        margin: 0 -1rem; /* Adiciona margem negativa para melhor visualização */
+        padding: 0 1rem; /* Compensa a margem negativa */
+        width: calc(100% + 2rem); /* Compensa o padding */
     }
 
     .tabela {
-        min-width: 100%;
+        min-width: 700px; /* Mantém a largura mínima para rolagem */
+        width: 100%;
         font-size: 0.9rem;
     }
 
-    .tabela thead th {
-        padding: 1rem;
-        font-size: 0.8rem;
-    }
-
-    .tabela tbody td {
-        padding: 1rem;
-    }
-
-    .acao-cell {
+    /* Adicione estas regras para melhorar a visualização mobile */
+    .coluna-acao {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        min-width: 120px;
     }
 
     .botao-acao {
         width: 100%;
-        padding: 1rem;
-        font-size: 0.9rem;
-        min-height: 45px;
+        justify-content: center;
+        padding: 0.8rem;
+        font-size: 0.85rem;
     }
-
+    
     .procura {
         flex-direction: column;
         gap: 0.8rem;
@@ -215,24 +215,19 @@
         font-size: 1rem;
         min-height: 50px;
     }
+.tabela-container {
+        margin: 0 -0.5rem;
+        padding: 0 0.5rem;
+        width: calc(100% + 1rem);
+    }
 
     .tabela {
+        min-width: 650px;
         font-size: 0.85rem;
     }
 
-    .tabela thead th {
-        padding: 0.8rem;
-        font-size: 0.75rem;
-    }
-
-    .tabela tbody td {
-        padding: 0.8rem;
-    }
-
-    .botao-acao {
-        padding: 0.8rem;
-        font-size: 0.85rem;
-        min-height: 42px;
+    .coluna-acao {
+        min-width: 110px;
     }
 
     nav.nav-android ul li a {

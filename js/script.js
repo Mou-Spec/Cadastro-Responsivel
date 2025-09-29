@@ -295,3 +295,18 @@ function editarUsuario(index) {
     // Ir para seção de cadastro
     irParaCadastro();
 }
+
+    // Formatar o cadastro do número automaticamente
+const inputTelefone = document.getElementById('tell');
+inputTelefone.addEventListener('input', function(e) {
+    let valor = e.target.value.replace(/\D/g, ""); // tira tudo que não for número
+    if (valor.length > 11) valor = valor.slice(0, 11); // limita a 11 dígitos
+    
+    if (valor.length > 6) {
+        e.target.value = `(${valor.slice(0, 2)})${valor.slice(2, 7)}-${valor.slice(7)}`;
+    } else if (valor.length > 2) {
+        e.target.value = `(${valor.slice(0, 2)})${valor.slice(2)}`;
+    } else {
+        e.target.value = valor;
+    }
+});
