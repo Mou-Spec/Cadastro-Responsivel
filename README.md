@@ -25,6 +25,7 @@
 
 ## 📁 Estrutura
 
+```
 uniflix/
 ├── index.html # Estrutura principal da aplicação
 ├── css/
@@ -32,3 +33,4 @@ uniflix/
 ├── js/
 │ └── main.js # Lógica de navegação entre abas
 └── README.md # Documentação do projeto
+```
